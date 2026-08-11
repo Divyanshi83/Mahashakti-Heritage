@@ -17,7 +17,7 @@ function Signup() {
 
       <div className="signup-right">
 
-        <div className="signup-card">
+        <div className="signup-card"> 
 
           <img
             src={logo}
