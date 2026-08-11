@@ -1,0 +1,596 @@
+/* =========================================
+   GOOGLE FONT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================================
+   RESET
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8F5F0;
+}
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.admin-page{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    overflow:hidden;
+
+    background:#F8F5F0;
+
+}
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.admin-left{
+
+    width:40%;
+
+    height:100%;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#F6F0E8;
+
+}
+
+.admin-left img{
+
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+}
+
+.admin-left::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.05);
+
+}
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.admin-right{
+
+    width:60%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#FCF8F2;
+
+    padding:35px 50px;
+
+    overflow-y:auto;
+
+}
+/* =========================================
+   ADMIN CARD
+========================================= */
+
+.admin-card{
+
+    width:100%;
+
+    max-width:580px;
+
+    background:#FFFDF9;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.05);
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.admin-logo{
+
+    width:140px;
+
+    display:block;
+
+    margin:0 auto 18px;
+
+    transition:.3s;
+
+}
+
+.admin-logo:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.admin-card h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    color:#7A0019;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    line-height:1.1;
+
+}
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.admin-card p{
+
+    text-align:center;
+
+    color:#777;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-bottom:28px;
+
+}
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    height:56px;
+
+    border:1px solid #E5E5E5;
+
+    border-radius:14px;
+
+    padding:0 18px;
+
+    background:#FFFFFF;
+
+    outline:none;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s ease;
+
+}
+
+.input-group input::placeholder{
+
+    color:#B3B3B3;
+
+}
+
+.input-group input:hover{
+
+    border-color:#D4AF37;
+
+}
+
+.input-group input:focus{
+
+    border-color:#C8A23A;
+
+    box-shadow:0 0 0 4px rgba(200,162,58,.12);
+
+}
+
+/* =========================================
+   FORGOT PASSWORD
+========================================= */
+
+.forgot-password{
+
+    text-align:right;
+
+    margin-top:-5px;
+
+    margin-bottom:25px;
+
+    color:#7A0019;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.forgot-password:hover{
+
+    color:#C8A23A;
+
+}
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.admin-btn{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#7A0019;
+
+    color:#FFFFFF;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    box-shadow:0 8px 22px rgba(122,0,25,.18);
+
+}
+
+.admin-btn:hover{
+
+    background:#C8A23A;
+
+    color:#222;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 15px 30px rgba(200,162,58,.20);
+
+}
+
+.admin-btn:active{
+
+    transform:scale(.98);
+
+}
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    margin:28px 0;
+
+}
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:42%;
+
+    height:1px;
+
+    background:#EEEEEE;
+
+}
+
+.divider::before{
+
+    left:0;
+
+}
+
+.divider::after{
+
+    right:0;
+
+}
+
+.divider span{
+
+    background:#FFFDF9;
+
+    color:#BEBEBE;
+
+    padding:0 16px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+
+/* =========================================
+   BACK TO CUSTOMER LOGIN
+========================================= */
+
+.login-link{
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.login-link a{
+
+    text-decoration:none;
+
+}
+
+.login-link span{
+
+    color:#7A0019;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-link span:hover{
+
+    color:#C8A23A;
+
+}
+
+/* =========================================
+   FADE ANIMATION
+========================================= */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:1200px){
+
+.admin-page{
+
+    flex-direction:column;
+
+    height:auto;
+
+}
+
+.admin-left{
+
+    width:100%;
+
+    height:350px;
+
+}
+
+.admin-right{
+
+    width:100%;
+
+    height:auto;
+
+    padding:40px 25px;
+
+}
+
+.admin-card{
+
+    max-width:600px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.admin-left{
+
+    display:none;
+
+}
+
+.admin-right{
+
+    width:100%;
+
+    padding:35px 20px;
+
+}
+
+.admin-card{
+
+    max-width:100%;
+
+    padding:24px;
+
+}
+
+.admin-logo{
+
+    width:120px;
+
+}
+
+.admin-card h1{
+
+    font-size:42px;
+
+}
+
+.admin-card p{
+
+    font-size:15px;
+
+}
+
+.input-group input{
+
+    height:52px;
+
+}
+
+.admin-btn{
+
+    height:52px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.admin-right{
+
+    padding:25px 18px;
+
+}
+
+.admin-logo{
+
+    width:100px;
+
+}
+
+.admin-card h1{
+
+    font-size:34px;
+
+}
+
+.admin-card p{
+
+    font-size:14px;
+
+}
+
+.input-group input{
+
+    height:50px;
+
+    font-size:14px;
+
+}
+
+.admin-btn{
+
+    height:50px;
+
+    font-size:15px;
+
+}
+
+.login-link{
+
+    font-size:14px;
+
+}
+
+}

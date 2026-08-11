@@ -1,0 +1,167 @@
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why {
+  background: #fffdf9;
+  padding: 100px 70px;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.why-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.why-heading span {
+  color: #c8a23a;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.why-heading h2 {
+  margin-top: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: #7a0019;
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.why-grid {
+  max-width: 1300px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.why-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 45px 30px;
+  text-align: center;
+
+  box-shadow: 0 18px 45px rgba(122, 0, 25, 0.08);
+
+  transition: all 0.35s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 25px 60px rgba(122, 0, 25, 0.18);
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.why-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: 0 auto 30px;
+
+  border: 2px solid #c8a23a;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 42px;
+  color: #c8a23a;
+
+  transition: all 0.4s ease;
+}
+
+.why-card:hover .why-icon {
+  background: #7a0019;
+  color: white;
+  border-color: #7a0019;
+
+  transform: rotateY(180deg);
+}
+
+/* ===========================
+   Title
+=========================== */
+
+.why-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #7a0019;
+
+  margin-bottom: 18px;
+
+  transition: 0.3s;
+}
+
+.why-card:hover h3 {
+  color: #c8a23a;
+}
+
+/* ===========================
+   Description
+=========================== */
+
+.why-card p {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 1100px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+  .why {
+    padding: 70px 25px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-heading h2 {
+    font-size: 42px;
+  }
+
+  .why-card {
+    padding: 35px 25px;
+  }
+
+  .why-icon {
+    width: 75px;
+    height: 75px;
+    font-size: 34px;
+  }
+}

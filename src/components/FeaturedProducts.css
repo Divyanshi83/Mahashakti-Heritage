@@ -1,0 +1,297 @@
+/* ===========================
+   Featured Products Section
+=========================== */
+
+.featured{
+
+    background:#F8F4EE;
+
+    padding:70px 70px;
+
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.featured-heading{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.featured-heading span{
+
+    color:#C8A23A;
+
+    font-size:17px;
+
+    letter-spacing:4px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+}
+
+.featured-heading h2{
+
+    margin-top:12px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:50px;
+
+    color:#7A0019;
+
+    line-height:1.1;
+
+}
+
+/* ===========================
+   Product Grid
+=========================== */
+
+.featured-grid{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+/* ===========================
+   Product Card
+=========================== */
+
+.product-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   Product Image
+=========================== */
+
+.product-image{
+
+    height:360px;
+
+    background:#EFE7DA;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.product-image span{
+
+    font-size:30px;
+
+    color:#B58A2F;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Badge
+=========================== */
+
+.badge{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    background:#7A0019;
+
+    color:white;
+
+    padding:7px 15px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   Product Info
+=========================== */
+
+.product-info{
+
+    padding:22px;
+
+    text-align:center;
+
+}
+
+.product-info h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:#7A0019;
+
+    margin-bottom:10px;
+
+}
+
+.rating{
+
+    color:#D4AF37;
+
+    font-size:18px;
+
+    margin-bottom:12px;
+
+}
+
+.product-info h4{
+
+    font-size:24px;
+
+    color:#222;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.product-info button{
+
+    width:100%;
+
+    background:#7A0019;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:50px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.product-info button:hover{
+
+    background:#C8A23A;
+
+    color:#222;
+
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:1200px){
+
+.featured-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+.featured{
+
+padding:60px 25px;
+
+}
+
+.featured-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.featured-heading h2{
+
+font-size:40px;
+
+}
+
+.product-image{
+
+height:300px;
+
+}
+
+.product-info{
+
+padding:20px;
+
+}
+
+.product-info h3{
+
+font-size:28px;
+
+}
+
+.product-info h4{
+
+font-size:22px;
+
+}
+
+}

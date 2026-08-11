@@ -1,0 +1,220 @@
+/* ===========================
+   Contact
+=========================== */
+
+.contact{
+    background:#fffdf9;
+    padding:100px 70px;
+}
+
+.contact-heading{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.contact-heading span{
+
+    color:#C8A23A;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-weight:600;
+
+}
+
+.contact-heading h2{
+
+    margin-top:15px;
+
+    font-size:58px;
+
+    color:#7A0019;
+
+    font-family:"Cormorant Garamond",serif;
+
+}
+
+.contact-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:60px;
+
+}
+
+/* Left */
+
+.contact-info{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.info-box{
+
+display:flex;
+
+gap:20px;
+
+align-items:flex-start;
+
+padding:25px;
+
+background:white;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(122,0,25,.08);
+
+transition:.35s;
+
+}
+
+.info-box:hover{
+
+transform:translateY(-6px);
+
+}
+
+.info-icon{
+
+font-size:28px;
+
+color:#C8A23A;
+
+margin-top:5px;
+
+}
+
+.info-box h3{
+
+font-size:26px;
+
+font-family:"Cormorant Garamond",serif;
+
+color:#7A0019;
+
+margin-bottom:8px;
+
+}
+
+.info-box p{
+
+color:#666;
+
+line-height:1.7;
+
+}
+
+/* Right */
+
+.contact-form{
+
+background:white;
+
+padding:40px;
+
+border-radius:24px;
+
+box-shadow:0 18px 45px rgba(122,0,25,.08);
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+padding:18px;
+
+border:1px solid #ddd;
+
+border-radius:12px;
+
+font-size:16px;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+border-color:#C8A23A;
+
+}
+
+.contact-form button{
+
+background:#7A0019;
+
+color:white;
+
+padding:18px;
+
+font-size:17px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.contact-form button:hover{
+
+background:#C8A23A;
+
+color:#7A0019;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact{
+
+padding:70px 25px;
+
+}
+
+.contact-heading h2{
+
+font-size:42px;
+
+}
+
+}
