@@ -1,7 +1,11 @@
 import "./Hero.css";
 import dress from "../assets/main.png";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+
+  const navigate = useNavigate();
+
   return (
     <section className="hero">
 
@@ -25,17 +29,26 @@ function Hero() {
 
         <div className="hero-buttons">
 
-          <button className="primary-btn">
+          {/* Shop Collection */}
+          <button
+            className="primary-btn"
+            onClick={() => navigate("/collections")}
+          >
             Shop Collection
           </button>
 
-          <button className="secondary-btn">
+
+          {/* Customize Poshak */}
+          <button
+            className="secondary-btn"
+          >
             Customize Poshak
           </button>
 
         </div>
 
       </div>
+
 
       <div className="hero-right">
 

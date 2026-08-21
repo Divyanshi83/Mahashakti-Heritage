@@ -1,94 +1,132 @@
 import "./FeaturedProducts.css";
+import { useNavigate } from "react-router-dom";
+
+import resham from "../assets/Resham poshak.png";
 
 function FeaturedProducts() {
 
-  const products = [
+  const navigate = useNavigate();
 
+  const collections = [
     {
-      name: "Royal Rajputi Poshak",
-      price: "₹7,999",
-      badge: "BESTSELLER",
-      rating: "★★★★★",
+      name: "Peacock Poshak",
+      slug: "peacock-poshak",
     },
-
     {
-      name: "Designer Cotton Suit",
-      price: "₹2,499",
-      badge: "NEW",
-      rating: "★★★★★",
+      name: "Chanderi Poshak",
+      slug: "chanderi-poshak",
     },
-
     {
-      name: "Premium Fabric",
-      price: "₹899 / Meter",
-      badge: "POPULAR",
-      rating: "★★★★★",
+      name: "Ghughroo Poshak",
+      slug: "ghughroo-poshak",
     },
-
     {
-      name: "Transfer Material",
-      price: "₹499",
-      badge: "LIMITED",
-      rating: "★★★★★",
+      name: "Udaipuri Danka Poshak",
+      slug: "udaipuri-danka-poshak",
     },
-
     {
-      name: "Royal Odhna",
-      price: "₹1,999",
-      badge: "TRENDING",
-      rating: "★★★★★",
+      name: "Jaipuri Danka Poshak",
+      slug: "jaipuri-danka-poshak",
     },
-
     {
-      name: "Bridal Rajputi Poshak",
-      price: "₹12,999",
-      badge: "PREMIUM",
-      rating: "★★★★★",
+      name: "Calcutti Poshak",
+      slug: "calcutti-poshak",
     },
-
+    {
+      name: "Resham Poshak",
+      slug: "resham-poshak",
+      image: resham,
+    },
+    {
+      name: "Gota Patti Poshak",
+      slug: "gota-patti-poshak",
+    },
+    {
+      name: "Copper & Silver Lace Poshak",
+      slug: "copper-silver-lace-poshak",
+    },
+    {
+      name: "Silver Lafaa Poshak",
+      slug: "silver-lafaa-poshak",
+    },
+    {
+      name: "Sikka Poshak",
+      slug: "sikka-poshak",
+    },
   ];
 
   return (
-
     <section className="featured">
+
+      {/* =========================
+          Heading
+      ========================= */}
 
       <div className="featured-heading">
 
-        <span>✦ FEATURED COLLECTION</span>
+        <span>
+          ✦ FEATURED COLLECTION
+        </span>
 
-        <h2>Handpicked Royal Collections</h2>
+        <h2>
+          Handpicked Royal Collections
+        </h2>
 
       </div>
 
+
+      {/* =========================
+          Products Grid
+      ========================= */}
+
       <div className="featured-grid">
 
-        {products.map((item, index) => (
+        {collections.map((item) => (
 
-          <div className="product-card" key={index}>
+          <div
+            className="product-card"
+            key={item.slug}
+          >
+
+            {/* Product Image */}
 
             <div className="product-image">
 
-              <div className="badge">
-                {item.badge}
-              </div>
+              {item.image ? (
 
-              {/* Product Image */}
-              <span>Product Image</span>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                />
+
+              ) : (
+
+                <span>
+                  Product Image
+                </span>
+
+              )}
 
             </div>
 
+
+            {/* Product Information */}
+
             <div className="product-info">
 
-              <h3>{item.name}</h3>
+              <h3>
+                {item.name}
+              </h3>
 
-              <p className="rating">
-                {item.rating}
-              </p>
 
-              <h4>{item.price}</h4>
+              {/* View / Customize Button */}
 
-              <button>
-                Explore Now
+              <button
+                onClick={() =>
+                  navigate(`/product-details/${item.slug}`)
+                }
+              >
+                Customize Your Poshak
               </button>
 
             </div>
@@ -100,9 +138,7 @@ function FeaturedProducts() {
       </div>
 
     </section>
-
   );
-
 }
 
 export default FeaturedProducts;

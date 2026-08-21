@@ -2,296 +2,327 @@
    Featured Products Section
 =========================== */
 
-.featured{
+.featured {
 
-    background:#F8F4EE;
+    background: #F8F4EE;
 
-    padding:70px 70px;
+    padding: 70px 70px;
 
 }
+
 
 /* ===========================
    Heading
 =========================== */
 
-.featured-heading{
+.featured-heading {
 
-    text-align:center;
+    text-align: center;
 
-    margin-bottom:40px;
-
-}
-
-.featured-heading span{
-
-    color:#C8A23A;
-
-    font-size:17px;
-
-    letter-spacing:4px;
-
-    font-weight:600;
-
-    text-transform:uppercase;
+    margin-bottom: 45px;
 
 }
 
-.featured-heading h2{
+.featured-heading span {
 
-    margin-top:12px;
+    color: #C8A23A;
 
-    font-family:'Cormorant Garamond',serif;
+    font-size: 17px;
 
-    font-size:50px;
+    letter-spacing: 4px;
 
-    color:#7A0019;
+    font-weight: 600;
 
-    line-height:1.1;
+    text-transform: uppercase;
 
 }
+
+.featured-heading h2 {
+
+    margin-top: 12px;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 50px;
+
+    color: #7A0019;
+
+    line-height: 1.1;
+
+}
+
 
 /* ===========================
-   Product Grid
+   Collection Grid
+   4 + 4 + 3 Layout
 =========================== */
 
-.featured-grid{
+.featured-grid {
 
-    max-width:1400px;
+    max-width: 1500px;
 
-    margin:auto;
+    margin: auto;
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-    gap:28px;
+    gap: 28px;
 
 }
+
 
 /* ===========================
-   Product Card
+   Collection Card
 =========================== */
 
-.product-card{
+.product-card {
 
-    background:white;
+    background: white;
 
-    border-radius:22px;
+    border-radius: 22px;
 
-    overflow:hidden;
+    overflow: hidden;
 
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
 
-    transition:.35s;
+    transition: 0.35s;
+
+}
+
+.product-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
 
 }
 
-.product-card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-
-}
 
 /* ===========================
-   Product Image
+   Product Image Box
 =========================== */
 
-.product-image{
+.product-image {
 
-    height:360px;
+    width: 100%;
 
-    background:#EFE7DA;
+    height: 360px;
 
-    display:flex;
+    background: #EFE7DA;
 
-    justify-content:center;
+    display: flex;
 
-    align-items:center;
+    justify-content: center;
 
-    position:relative;
+    align-items: center;
 
-}
+    position: relative;
 
-.product-image span{
-
-    font-size:30px;
-
-    color:#B58A2F;
-
-    font-weight:600;
+    overflow: hidden;
 
 }
+
 
 /* ===========================
-   Badge
+   Actual Product Image
 =========================== */
 
-.badge{
+.product-image img {
 
-    position:absolute;
+    width: 125%;
 
-    top:18px;
+    height: 125%;
 
-    left:18px;
+    object-fit: contain;
 
-    background:#7A0019;
+    object-position: center;
 
-    color:white;
-
-    padding:7px 15px;
-
-    border-radius:30px;
-
-    font-size:12px;
-
-    font-weight:600;
+    display: block;
 
 }
+
 
 /* ===========================
-   Product Info
+   Placeholder
 =========================== */
 
-.product-info{
+.product-image span {
 
-    padding:22px;
+    font-size: 28px;
 
-    text-align:center;
+    color: #B58A2F;
 
-}
-
-.product-info h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:30px;
-
-    color:#7A0019;
-
-    margin-bottom:10px;
+    font-weight: 600;
 
 }
 
-.rating{
-
-    color:#D4AF37;
-
-    font-size:18px;
-
-    margin-bottom:12px;
-
-}
-
-.product-info h4{
-
-    font-size:24px;
-
-    color:#222;
-
-    margin-bottom:20px;
-
-    font-weight:700;
-
-}
 
 /* ===========================
-   Button
+   Product Information
 =========================== */
 
-.product-info button{
+.product-info {
 
-    width:100%;
+    padding: 22px;
 
-    background:#7A0019;
-
-    color:white;
-
-    border:none;
-
-    padding:14px;
-
-    border-radius:50px;
-
-    font-size:16px;
-
-    cursor:pointer;
-
-    transition:.3s;
+    text-align: center;
 
 }
 
-.product-info button:hover{
+.product-info h3 {
 
-    background:#C8A23A;
+    font-family: 'Cormorant Garamond', serif;
 
-    color:#222;
+    font-size: 28px;
+
+    color: #7A0019;
+
+    margin: 0 0 18px 0;
+
+    line-height: 1.15;
 
 }
+
+
+/* ===========================
+   Customize Button
+=========================== */
+
+.product-info button {
+
+    width: 100%;
+
+    background: #7A0019;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 12px;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.product-info button:hover {
+
+    background: #C8A23A;
+
+    color: #222;
+
+}
+
+
+/* ===========================
+   Last Row
+   No Blank Left Space
+=========================== */
+
+.product-card:nth-child(9) {
+
+    grid-column: 1;
+
+}
+
+.product-card:nth-child(10) {
+
+    grid-column: 2;
+
+}
+
+.product-card:nth-child(11) {
+
+    grid-column: 3;
+
+}
+
 
 /* ===========================
    Tablet
 =========================== */
 
-@media(max-width:1200px){
+@media (max-width: 1200px) {
 
-.featured-grid{
+    .featured-grid {
 
-grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .product-card:nth-child(9),
+    .product-card:nth-child(10),
+    .product-card:nth-child(11) {
+
+        grid-column: auto;
+
+    }
 
 }
 
-}
 
 /* ===========================
    Mobile
 =========================== */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-.featured{
+    .featured {
 
-padding:60px 25px;
+        padding: 60px 25px;
 
-}
+    }
 
-.featured-grid{
+    .featured-heading {
 
-grid-template-columns:1fr;
+        margin-bottom: 35px;
 
-gap:25px;
+    }
 
-}
+    .featured-heading h2 {
 
-.featured-heading h2{
+        font-size: 40px;
 
-font-size:40px;
+    }
 
-}
+    .featured-grid {
 
-.product-image{
+        grid-template-columns: 1fr;
 
-height:300px;
+        gap: 25px;
 
-}
+    }
 
-.product-info{
+    .product-card:nth-child(9),
+    .product-card:nth-child(10),
+    .product-card:nth-child(11) {
 
-padding:20px;
+        grid-column: auto;
 
-}
+    }
 
-.product-info h3{
+    .product-image {
 
-font-size:28px;
+        height: 330px;
 
-}
+    }
 
-.product-info h4{
+    .product-info {
 
-font-size:22px;
+        padding: 20px;
 
-}
+    }
+
+    .product-info h3 {
+
+        font-size: 27px;
+
+    }
 
 }

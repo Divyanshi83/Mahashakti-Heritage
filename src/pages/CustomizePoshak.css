@@ -1,0 +1,427 @@
+/* =========================================
+   Customize Poshak Page
+========================================= */
+
+.customize-page {
+
+    min-height: 100vh;
+
+    background: #F8F4EE;
+
+    padding: 90px 70px 100px;
+
+}
+
+
+/* =========================================
+   Heading
+========================================= */
+
+.customize-heading {
+
+    max-width: 850px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+}
+
+.customize-heading span {
+
+    color: #C8A23A;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+}
+
+.customize-heading h1 {
+
+    margin-top: 14px;
+
+    margin-bottom: 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    color: #7A0019;
+
+}
+
+.customize-heading p {
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================
+   Selected Poshak
+========================================= */
+
+.selected-poshak {
+
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    padding: 22px 30px;
+
+    background: white;
+
+    border-left: 5px solid #C8A23A;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+.selected-poshak span {
+
+    color: #C8A23A;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+.selected-poshak h2 {
+
+    margin-top: 5px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    color: #7A0019;
+
+}
+
+
+/* =========================================
+   Form
+========================================= */
+
+.customize-form {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================================
+   Form Group
+========================================= */
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.form-group.full-width {
+
+    grid-column: 1 / -1;
+
+}
+
+.form-group label {
+
+    margin-bottom: 9px;
+
+    color: #7A0019;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+/* =========================================
+   Inputs
+========================================= */
+
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #DDD3C5;
+
+    border-radius: 10px;
+
+    background: #FCFAF7;
+
+    color: #333;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+.form-group select {
+
+    cursor: pointer;
+
+}
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 120px;
+
+}
+
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #C8A23A;
+
+    box-shadow: 0 0 0 3px rgba(200, 162, 58, 0.12);
+
+}
+
+
+/* =========================================
+   Submit
+========================================= */
+
+.customize-submit {
+
+    grid-column: 1 / -1;
+
+    margin-top: 10px;
+
+    text-align: center;
+
+}
+
+.customize-submit button {
+
+    min-width: 280px;
+
+    padding: 15px 28px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #7A0019;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.customize-submit button:hover {
+
+    background: #C8A23A;
+
+    color: #222;
+
+}
+
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .customize-page {
+
+        padding: 80px 40px 90px;
+
+    }
+
+    .customize-heading h1 {
+
+        font-size: 50px;
+
+    }
+
+    .customize-form {
+
+        padding: 32px;
+
+    }
+
+}
+
+
+/* =========================================
+   Small Tablet
+========================================= */
+
+@media (max-width: 768px) {
+
+    .customize-page {
+
+        padding: 65px 20px 75px;
+
+    }
+
+    .customize-heading {
+
+        margin-bottom: 35px;
+
+    }
+
+    .customize-heading span {
+
+        font-size: 13px;
+
+        letter-spacing: 2.5px;
+
+    }
+
+    .customize-heading h1 {
+
+        font-size: 42px;
+
+    }
+
+    .customize-heading p {
+
+        font-size: 16px;
+
+    }
+
+    .selected-poshak {
+
+        padding: 20px;
+
+    }
+
+    .selected-poshak h2 {
+
+        font-size: 29px;
+
+    }
+
+    .customize-form {
+
+        grid-template-columns: 1fr;
+
+        padding: 25px;
+
+        gap: 22px;
+
+        border-radius: 20px;
+
+    }
+
+    .form-group.full-width {
+
+        grid-column: auto;
+
+    }
+
+    .customize-submit {
+
+        grid-column: auto;
+
+    }
+
+    .customize-submit button {
+
+        width: 100%;
+
+        min-width: 0;
+
+    }
+
+}
+
+
+/* =========================================
+   Small Mobile
+========================================= */
+
+@media (max-width: 480px) {
+
+    .customize-page {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+    .customize-heading h1 {
+
+        font-size: 36px;
+
+    }
+
+    .selected-poshak h2 {
+
+        font-size: 26px;
+
+    }
+
+    .customize-form {
+
+        padding: 20px;
+
+    }
+
+    .form-group select,
+    .form-group textarea {
+
+        font-size: 14px;
+
+    }
+
+}

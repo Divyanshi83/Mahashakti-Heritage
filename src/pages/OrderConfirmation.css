@@ -1,0 +1,284 @@
+/* =========================
+   Confirmation Page
+========================= */
+
+.confirmation-page {
+  min-height: 100vh;
+  background: #f8f4ee;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* =========================
+   Card
+========================= */
+
+.confirmation-card {
+  width: 100%;
+  max-width: 850px;
+  background: #fff;
+  border-radius: 28px;
+  padding: 55px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(122, 0, 25, 0.10);
+}
+
+
+/* =========================
+   Success Icon
+========================= */
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #8f001e;
+  color: #fff;
+
+  font-size: 38px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   Tag
+========================= */
+
+.confirmation-tag {
+  color: #c8a23a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.confirmation-card h1 {
+  margin: 15px 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 62px;
+  color: #7a0019;
+}
+
+
+.confirmation-message {
+  max-width: 650px;
+  margin: 0 auto 35px;
+
+  color: #555;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   Product
+========================= */
+
+.confirmation-product {
+  background: #f8f4ee;
+  border-left: 4px solid #c8a23a;
+
+  border-radius: 16px;
+
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+
+.confirmation-product span {
+  color: #c8a23a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+.confirmation-product h2 {
+  margin: 8px 0 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  color: #7a0019;
+}
+
+
+/* =========================
+   Details
+========================= */
+
+.confirmation-details {
+  border: 1px solid #eadfd2;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  padding: 17px 22px;
+
+  border-bottom: 1px solid #eadfd2;
+
+  text-align: left;
+}
+
+
+.confirmation-row:last-child {
+  border-bottom: none;
+}
+
+
+.confirmation-row strong {
+  color: #7a0019;
+}
+
+
+.confirmation-row span {
+  color: #555;
+}
+
+
+/* =========================
+   Note
+========================= */
+
+.confirmation-note {
+  background: #fffaf2;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+
+.confirmation-note h3 {
+  margin: 0 0 8px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 26px;
+  color: #7a0019;
+}
+
+
+.confirmation-note p {
+  margin: 0;
+
+  color: #666;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+
+.confirmation-actions button,
+.confirmation-card > button {
+  min-width: 210px;
+  height: 54px;
+
+  padding: 0 28px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.home-button {
+  background: #8f001e;
+  border: 2px solid #8f001e;
+  color: #fff;
+}
+
+
+.home-button:hover {
+  background: #700016;
+  transform: translateY(-2px);
+}
+
+
+.collection-button {
+  background: #fff;
+  border: 2px solid #c8a23a;
+  color: #7a0019;
+}
+
+
+.collection-button:hover {
+  background: #c8a23a;
+  color: #fff;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+  .confirmation-page {
+    padding: 45px 16px;
+  }
+
+  .confirmation-card {
+    padding: 35px 20px;
+  }
+
+  .confirmation-card h1 {
+    font-size: 46px;
+  }
+
+  .confirmation-message {
+    font-size: 16px;
+  }
+
+  .confirmation-product h2 {
+    font-size: 28px;
+  }
+
+  .confirmation-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+  }
+
+  .confirmation-actions button,
+  .confirmation-card > button {
+    width: 100%;
+  }
+
+}

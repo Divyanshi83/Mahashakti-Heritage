@@ -1,0 +1,535 @@
+/* =========================
+   Payment Page
+========================= */
+
+.payment-page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+
+  background: #f8f4ee;
+
+  padding: 80px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* =========================
+   Main Container
+========================= */
+
+.payment-container {
+  width: 100%;
+  max-width: 850px;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  padding: 50px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 20px 50px rgba(122, 0, 25, 0.08);
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.payment-heading {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.payment-heading span {
+  display: block;
+
+  color: #c8a23a;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.payment-heading h1 {
+  margin: 15px 0;
+
+  color: #7a0019;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 54px;
+
+  line-height: 1.1;
+}
+
+.payment-heading p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #666;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   Selected Product
+========================= */
+
+.payment-product {
+  background: #f8f4ee;
+
+  border-left: 5px solid #c8a23a;
+
+  border-radius: 16px;
+
+  padding: 25px 28px;
+
+  margin-bottom: 25px;
+
+  box-sizing: border-box;
+}
+
+.payment-product span {
+  color: #c8a23a;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.payment-product h2 {
+  margin: 8px 0 0;
+
+  color: #7a0019;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 34px;
+}
+
+
+/* =========================
+   Payment Amount
+========================= */
+
+.payment-amount {
+  text-align: center;
+
+  border: 1px solid #eadfd2;
+
+  border-radius: 18px;
+
+  padding: 30px 20px;
+
+  margin-bottom: 35px;
+}
+
+.payment-amount span {
+  color: #c8a23a;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.payment-amount h2 {
+  margin: 10px 0;
+
+  color: #8f001e;
+
+  font-size: 44px;
+
+  font-weight: 700;
+}
+
+.payment-amount p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   Payment Options
+========================= */
+
+.payment-options {
+  margin-bottom: 30px;
+}
+
+.payment-options h2 {
+  margin-bottom: 18px;
+
+  color: #7a0019;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 30px;
+}
+
+
+/* =========================
+   Payment Option
+========================= */
+
+.payment-option {
+  width: 100%;
+
+  min-height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 18px 22px;
+
+  margin-bottom: 12px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #ddd1c3;
+
+  border-radius: 14px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.payment-option.active {
+  border: 2px solid #c8a23a;
+
+  background: #fffdf9;
+}
+
+.payment-option:hover:not(.disabled) {
+  border-color: #c8a23a;
+
+  transform: translateY(-1px);
+}
+
+.payment-option.disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   Payment Option Content
+========================= */
+
+.payment-option-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.payment-option-content strong {
+  color: #7a0019;
+
+  font-size: 17px;
+}
+
+.payment-option-content span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   Radio
+========================= */
+
+.payment-radio {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: #8f001e;
+
+  color: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   Pay Button
+========================= */
+
+.pay-button {
+  width: 100%;
+
+  height: 58px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: #8f001e;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.pay-button:hover {
+  background: #700016;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   Note
+========================= */
+
+.payment-note {
+  margin: 20px auto 0;
+
+  max-width: 650px;
+
+  text-align: center;
+
+  color: #888;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   Back Button
+========================= */
+
+.payment-edit-button {
+  display: block;
+
+  margin: 20px auto 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #7a0019;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.payment-edit-button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   No Order Button
+========================= */
+
+.payment-back-button {
+  display: block;
+
+  margin: 25px auto 0;
+
+  min-width: 210px;
+
+  height: 52px;
+
+  padding: 0 25px;
+
+  border: 2px solid #c8a23a;
+
+  border-radius: 28px;
+
+  background: #ffffff;
+
+  color: #7a0019;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .payment-page {
+    padding: 50px 16px;
+  }
+
+  .payment-container {
+    padding: 35px 22px;
+
+    border-radius: 22px;
+  }
+
+  .payment-heading {
+    margin-bottom: 30px;
+  }
+
+  .payment-heading span {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+  .payment-heading h1 {
+    font-size: 42px;
+  }
+
+  .payment-heading p {
+    font-size: 15px;
+  }
+
+  .payment-product {
+    padding: 22px;
+  }
+
+  .payment-product h2 {
+    font-size: 29px;
+  }
+
+  .payment-amount {
+    padding: 25px 15px;
+  }
+
+  .payment-amount h2 {
+    font-size: 38px;
+  }
+
+  .payment-options h2 {
+    font-size: 27px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .payment-page {
+    padding: 30px 12px;
+  }
+
+  .payment-container {
+    padding: 28px 16px;
+
+    border-radius: 18px;
+  }
+
+  .payment-heading h1 {
+    font-size: 36px;
+  }
+
+  .payment-heading p {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .payment-product {
+    padding: 18px;
+  }
+
+  .payment-product h2 {
+    font-size: 26px;
+  }
+
+  .payment-amount {
+    padding: 22px 12px;
+  }
+
+  .payment-amount h2 {
+    font-size: 34px;
+  }
+
+  .payment-option {
+    min-height: 68px;
+
+    padding: 15px;
+  }
+
+  .payment-option-content strong {
+    font-size: 16px;
+  }
+
+  .payment-option-content span {
+    font-size: 13px;
+  }
+
+  .payment-radio {
+    width: 25px;
+    height: 25px;
+  }
+
+  .pay-button {
+    height: 55px;
+
+    font-size: 16px;
+  }
+
+  .payment-note {
+    font-size: 12px;
+  }
+
+}
